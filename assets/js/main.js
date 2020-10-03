@@ -17756,12 +17756,76 @@ return Popper;
 
 $(document).ready(function () {
 	//lazyload Ленивая загрузка делаем так чтобы повысить скорость загрузки сайта для гугл speed		
-		[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+	[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
 		img.setAttribute('src', img.getAttribute('data-src'));
 		img.onload = function () {
 			img.removeAttribute('data-src');
 		};
 	});
+});
+
+// основной слайдер
+$(document).ready(function () {
+	$('.slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots:false,
+		pauseOnHover:false,
+		autoplay: true,
+		autoplaySpeed: 6000
+	  });
+});
+
+// мобильный слайдер
+$(document).ready(function () {
+	$('.slider_mobile').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots:false,
+		pauseOnHover:false,
+		autoplay: true,
+		autoplaySpeed: 6000
+	  });
+});
+
+// категории слайдер
+$(document).ready(function () {
+	$('.categ_slider').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		responsive: [
+		  {
+			breakpoint: 992,
+			settings: {
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 768,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 2
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  }
+		]
+	  });
 });
 module.exports = lazyload;
 
