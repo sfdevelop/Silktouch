@@ -9609,6 +9609,15 @@ body {
         background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../i/choice.png") !important;
         background: none !important;
     }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .comments .rating {
+        display: block !important;
+        position: relative !important;
+    }
 }
 
 a {
@@ -10041,8 +10050,15 @@ a:hover {
     margin-top: -150px;
 }
 
-.comments_slider__box p {
+.comments_slider__box p,
+  .comments_slider__box a {
     z-index: 88;
+}
+
+.comments_slider__box a {
+    color: #EA5788;
+    text-decoration: underline;
+    font-size: 80%;
 }
 
 .comments_slider .slick-list {
@@ -10058,4 +10074,192 @@ a:hover {
     border-radius: 50%;
     overflow: hidden;
     z-index: 8888;
+}
+
+.comments .rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 88;
+}
+
+.comments .rating .checked {
+    color: orange;
+}
+
+.comments .slick-prev,
+.comments .slick-prev:hover,
+.comments .slick-prev:focus {
+    left: -11px;
+    z-index: 888;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    top: 55% !important;
+    margin-top: 15px;
+    background-image: url(../i/left.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.comments .slick-next,
+.comments .slick-next:hover,
+.comments .slick-next:focus {
+    right: -11px;
+    margin-bottom: -11px;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    top: 55% !important;
+    margin-top: 15px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    background-image: url(../i/right.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.comments .slick-prev::before,
+.comments .slick-next:before {
+    content: '';
+}
+
+.comments h5 {
+    color: #EA5788;
+}
+
+.comments small {
+    color: #6c757d;
+}
+
+.news .slider_news {
+    position: relative;
+}
+
+.news .slider_news .data {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #EA5788;
+}
+
+.news .slider_news .slick-prev,
+  .news .slider_news .slick-prev:hover,
+  .news .slider_news .slick-prev:focus {
+    z-index: 888;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    background-image: url(../i/left.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 0 !important;
+    top: 90%;
+    left: 102% !important;
+}
+
+.news .slider_news .slick-next,
+  .news .slider_news .slick-next:hover,
+  .news .slider_news .slick-next:focus {
+    right: -11px;
+    margin-bottom: -11px;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    background-image: url(../i/right.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 90%;
+    left: calc(102% + 50px);
+}
+
+.news .slider_news .slick-prev::before,
+  .news .slider_news .slick-next:before {
+    content: '';
+}
+
+.subscription {
+    background-color: #FFECE4;
+}
+
+.subscription img {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+}
+
+.subscription .big {
+    font-family: "Montserrat Alternates";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.subscription .big p {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.subscription form {
+    width: 100%;
+}
+
+.subscription form .form-group {
+    width: 100%;
+}
+
+.subscription form .form-group .form-control {
+    background-color: #fff;
+    border: 1px solid #EA5788;
+}
+
+.subscription form .btn {
+    height: 38px;
+}
+
+.about {
+    background-color: #232323;
+}
+
+.about p {
+    color: #fff;
+}
+
+.about a {
+    color: #EA5788;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    z-index: 88;
+    text-decoration: underline;
+}
+
+.about .collapseLines {
+    position: relative;
+}
+
+.about .hide-class .screen {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#232323));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, #232323 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #232323 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
 }
