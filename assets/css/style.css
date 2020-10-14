@@ -9169,6 +9169,155 @@ textarea.form-control {
     }
 }
 
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.page-link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #232323 !important;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    color: #232323;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+}
+
+.page-item:last-child a {
+    color: #232323;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color: #EA5788;
+    border-color: #EA5788;
+}
+
+.page-item.active .page-link:hover {
+    color: #fff !important;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.pagination-lg .page-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item:last-child .page-link {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #232323;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "•";
+    color: #EA5788 !important;
+    font-size: 18px;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
@@ -9442,6 +9591,15 @@ body {
     line-height: 60px;
 }
 
+h1 {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: left;
+    color: #232323;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu a {
         font-size: 12px !important;
@@ -9560,6 +9718,10 @@ body {
         background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../i/choice.png") !important;
         background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../i/choice.png") !important;
     }
+
+    .pl-mobile {
+        padding-left: 90px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -9618,6 +9780,10 @@ body {
         display: block !important;
         position: relative !important;
     }
+
+    .pl-mobile {
+        padding-left: 15%;
+    }
 }
 
 a {
@@ -9627,6 +9793,15 @@ a {
 a:hover {
     text-decoration: none;
     color: #EA5788 !important;
+}
+
+.bg-pink {
+    background-color: #FFEEE6;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #fff;
 }
 
 .p-absolute {
@@ -10262,4 +10437,128 @@ a:hover {
     width: 100%;
     height: 100%;
     z-index: 11;
+}
+
+footer {
+    background-color: #232323;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: #fff !important;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer .line {
+    border-top: 1px solid #fff;
+}
+
+.catalog .title {
+    background: #ea5788de;
+    text-align: right;
+    -webkit-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    height: 65px;
+}
+
+.catalog .title span {
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    transform: skew(30deg);
+    padding-right: 30px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.catalog .absolute {
+    bottom: 0px;
+    right: -20px;
+    width: 80%;
+}
+
+.catalog .relative {
+    overflow: hidden;
+}
+
+.catalog a,
+.catalog a:hover {
+    color: #fff;
+}
+
+.catalog span a:hover {
+    color: #fff !important;
+}
+
+.card .news_stick {
+    width: 60px;
+    height: 25px;
+    border-radius: 0px 10px 10px 0px;
+    background: #a5d916;
+    color: #fff;
+    position: absolute;
+    left: 16px;
+    top: 30px;
+    text-align: center;
+}
+
+.card .hit_stick {
+    width: 60px;
+    height: 25px;
+    border-radius: 0px 10px 10px 0px;
+    background: #FF8E0D;
+    color: #fff;
+    position: absolute;
+    left: 16px;
+    top: 30px;
+    text-align: center;
+}
+
+.card .sale_stick {
+    width: 60px;
+    height: 25px;
+    background: #ff2323;
+    color: #fff;
+    position: absolute;
+    right: 16px;
+    top: 30px;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+}
+
+.stikly {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact .line {
+    border-top: 2px solid #EA5788;
+}
+
+.contact .form-control {
+    background-color: #f3f3f3;
+}
+
+.contact .map {
+    margin-bottom: -5px;
 }
