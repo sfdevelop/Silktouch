@@ -9600,6 +9600,14 @@ h1 {
     color: #232323;
 }
 
+.article h4 {
+    font-size: 18px !important;
+}
+
+.article small {
+    color: #6c757d;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu a {
         font-size: 12px !important;
@@ -10561,4 +10569,71 @@ footer .line {
 
 .contact .map {
     margin-bottom: -5px;
+}
+
+.blog .data {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #EA5788;
+}
+
+.blog_big {
+    position: relative;
+}
+
+.blog_big .p-absolute {
+    background-color: #fff;
+    bottom: 0;
+}
+
+.article .slick-prev,
+.article .slick-prev:hover,
+.article .slick-prev:focus {
+    left: -270px;
+    z-index: 888;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    background-image: url(../i/left.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 0 !important;
+    top: 85%;
+}
+
+.article .slick-next,
+.article .slick-next:hover,
+.article .slick-next:focus {
+    right: -11px;
+    margin-bottom: -11px;
+    z-index: 888;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ea5788;
+    border-radius: 50%;
+    background-image: url(../i/right.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 85%;
+    left: -220px;
+}
+
+.article .slick-prev::before,
+.article .slick-next:before {
+    content: '';
+}
+
+.article .data {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #EA5788;
 }
