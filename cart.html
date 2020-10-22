@@ -152,7 +152,7 @@
                         </section>
                     </div>
                     <div class="col-lg-2 col-2 d-flex align-items-center justify-content-center flex-column">
-                        630 грн 
+                        630 грн
                         <div class="old">700 грн</div>
                     </div>
                     <div class="col-lg-1 col-md-1 d-flex align-items-center justify-content-end">
@@ -285,7 +285,8 @@
                 <div class="col-lg-8">
                     <form action="">
                         <div class="col d-flex p-0 flex-wrap flex-lg-nowrap">
-                            <input type="text" class="form-control my-lg-4 my-2" id="usr" placeholder="Скидочный сертификат">
+                            <input type="text" class="form-control my-lg-4 my-2" id="usr"
+                                placeholder="Скидочный сертификат">
                             <div class="invalid-feedback">
                                 Please select a valid state.
                             </div>
@@ -297,7 +298,7 @@
                 </div>
                 <div class="col-lg-4 sum my-4 p-lg-0">
                     <div class="row">
-                        <div class="col-6 d-flex align-items-center justify-content-lg-end justify-content-start"> 
+                        <div class="col-6 d-flex align-items-center justify-content-lg-end justify-content-start">
                             <span class="black">Сума заказа</span>
                         </div>
                         <div class="col-6">
@@ -329,7 +330,158 @@
                 </div>
             </div>
             <div class="line_gray"></div>
-        </div>    
+        </div>
+        <div class="container">
+            <div class="row data mt-lg-5 mt-4">
+                <div class="col-12">
+                    <h2>Данные получателя</h2>
+                    <div class="line col-sm-6 mb-lg-5 mb-5"></div>
+                </div>
+                <form action="">
+                    <div class="row mx-1 mx-sm-0">
+                        <div class="col-md-6 col-12">
+                            <input type="text" class="form-control mb-4" id="usr" placeholder="Имя*">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" class="form-control mb-4" id="usr" placeholder="Телефон*">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" class="form-control mb-4" id="usr" placeholder="Фамилия*">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" class="form-control mb-4" id="usr" placeholder="Email">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" class="form-control mb-4" id="usr" placeholder="Отчество">
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row data my-4">
+                <div class="col-lg-6 pl-0">
+                    <div class="col-12 ">
+                        <h2>Способы оплаты</h2>
+                        <div class="line col-sm-8 mb-lg-6 mb-5"></div>
+                    </div>
+                    <div class="col-12 mt-12 ">
+                        <form>
+                            <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                <input type="radio" class="custom-control-input" id="customRadio" name="example"
+                                    value="customEx">
+                                <label class="custom-control-label" for="customRadio">По реквизитам на счет в банке</label>
+                                <div class="green">
+                                    Бесплатная доставка при оплате данным способом
+                                </div>
+                                <div class="gray mt-2">
+                                    <p>ФОП Іванов Іван Іванович</p>
+                                    <p>IBAN: UA123216540000026001234567891</p>
+                                    <p>МФО: 321654, код ЄДРПОУ: 1234567891</p>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                <input type="radio" class="custom-control-input" id="customRadio3" name="example"
+                                    value="customEx">
+                                <label class="custom-control-label" for="customRadio3">Кредитной картой онлайн, Приват
+                                    24</label>
+                                <div class="green">
+                                    Бесплатная доставка при оплате данным способом
+                                </div>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                <input type="radio" class="custom-control-input" id="customRadio2" name="example"
+                                    value="customEx">
+                                <label class="custom-control-label" for="customRadio2">Наложенный платеж</label>
+                                <div class="gray mt-2">
+                                    <p>Платная услуга - доставку и комиссию за пересылку денег отправителю оплачивает
+                                        получатель согласно тарифам перевозчика.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-0 mt-4 mt-lg-0">
+                    <div class="col-12 ">
+                        <h2>Способы доставки</h2>
+                        <div class="line col-sm-8 mb-lg-6 mb-5"></div>
+                    </div>
+                    <div class="row mt-12 pl-3 pl-lg-0">
+                        <div class="col-md-5">
+                            <form>
+                                <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                    <input type="radio" class="custom-control-input" id="customRadio11" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="customRadio11">Новая Почта</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                    <input type="radio" class="custom-control-input" id="customRadio12" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="customRadio12">Укрпочта</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline d-block mb-2">
+                                    <input type="radio" class="custom-control-input" id="customRadio13" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="customRadio13">Justin</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-7 mt-3 mt-lg-0">
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Область</option>
+                                    <option>Область</option>
+                                    <option>Область</option>
+                                    <option>Область</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Населенный пункт</option>
+                                    <option>Населенный пункт</option>
+                                    <option>Населенный пункт</option>
+                                    <option>Населенный пункт</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>№ отделения</option>
+                                    <option>№ отделения</option>
+                                    <option>№ отделения</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 pl-lg-0 mt-4 d-block">
+                    <h2>Способы доставки</h2>
+                    <div class="line col-sm-8 mb-lg-6 mb-3"></div>
+                    <textarea class="form-control p-3" name="" id="" cols="30" rows="3" placeholder="Текст"></textarea>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                    <small>* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</small>
+                </div>
+                <div class="col-12 pl-lg-0 mt-4">
+                    <a href="" class="btn btn-lg">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="subscription py-lg-5 py-3">
         <div class="container">
