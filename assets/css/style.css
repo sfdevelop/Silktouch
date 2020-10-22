@@ -9991,6 +9991,10 @@ h1 {
     content: "\e902";
 }
 
+.icon-next:before {
+    content: "\e907";
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu a {
         font-size: 12px !important;
@@ -10192,6 +10196,14 @@ a {
 a:hover {
     text-decoration: none;
     color: #EA5788 !important;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.blue {
+    background-color: #a5d916;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -11259,4 +11271,50 @@ footer .line {
 .order .sum,
 .order .arrow {
     color: #232323;
+}
+
+.order .btn[aria-expanded="true"] .icon-next {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: .1s ease-out;
+    -webkit-transition-delay: 0.1s;
+    -o-transition: .1s ease-out;
+    -o-transition-delay: 0.1s;
+    -moz-transition: .1s ease-out;
+    -moz-transition-delay: 0.1s;
+    transition: .1s ease-out;
+    transition-delay: 0.1s;
+}
+
+.order .btn[aria-expanded="false"] .icon-next {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .1s ease-out;
+    -webkit-transition-delay: 0.1s;
+    -o-transition: .1s ease-out;
+    -o-transition-delay: 0.1s;
+    -moz-transition: .1s ease-out;
+    -moz-transition-delay: 0.1s;
+    transition: .1s ease-out;
+    transition-delay: 0.1s;
+}
+
+.order .icon-next {
+    background-color: #ffeee6;
+    color: #232323 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?bmf23n');
-  src:  url('fonts/icomoon.eot?bmf23n#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bmf23n') format('truetype'),
-    url('fonts/icomoon.woff?bmf23n') format('woff'),
-    url('fonts/icomoon.svg?bmf23n#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sqsxwp');
+  src:  url('fonts/icomoon.eot?sqsxwp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sqsxwp') format('truetype'),
+    url('fonts/icomoon.woff?sqsxwp') format('woff'),
+    url('fonts/icomoon.svg?sqsxwp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -41,7 +41,25 @@
 .icon-money:before {
   content: "\e905";
 }
+.icon-arrowr .path1:before {
+  content: "\e906";
+  color: rgb(255, 255, 255);
+}
+.icon-arrowr .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: none;
+}
+.icon-arrowr .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 149, 0);
+}
 .icon-pen:before {
   content: "\e902";
   color: #c5c5c5;
+}
+.icon-next:before {
+  content: "\e907";
+  color: #5a598e;
 }
