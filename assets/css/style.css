@@ -11318,3 +11318,31 @@ footer .line {
     align-items: center;
     font-size: 12px;
 }
+
+.order .line-bottom {
+    border-bottom: 1px solid #fcc7b0;
+}
+
+.order .p-arial p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.order .order_desc p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.order .order_desc .img-order img {
+    border-radius: 50%;
+}
+
+.order .order-mobile p {
+    margin-bottom: 0;
+    font-size: 13px !important;
+    line-height: 1.1;
+}
+
+.order .order-mobile .img-order img {
+    border-radius: 50%;
+    width: 20px;
+}
