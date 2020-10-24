@@ -19887,7 +19887,7 @@ $(document).ready(function () {
 
 //tooltips
 $(document).ready(function () {
-	$('div').tooltip();
+	$('[data-toggle="tooltip"]').tooltip();   
 });
 module.exports = lazyload;
 
