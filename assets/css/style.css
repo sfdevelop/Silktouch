@@ -10120,6 +10120,14 @@ h1 {
 }
 
 @media (max-width: 576px) {
+    .category_all .sorting {
+        font-size: 10px !important;
+    }
+
+    .category_all .sorting select {
+        font-size: 10px !important;
+    }
+
     .m_slider .img-mobile {
         opacity: .5;
     }
@@ -11345,6 +11353,25 @@ footer .line {
 .order .order-mobile .img-order img {
     border-radius: 50%;
     width: 20px;
+}
+
+.category_all .sorting {
+    height: 20px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.category_all .sorting select {
+    font-size: inherit;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.category_all .sorting .form-control {
+    height: 23px;
+    margin-bottom: 0;
 }
 
 .category_all__box {
