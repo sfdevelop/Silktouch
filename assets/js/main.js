@@ -25532,7 +25532,7 @@ $(document).ready(function () {
 		asNavFor: '.slider_vacansie__nav'
 	});
 	$('.slider_vacansie__nav').slick({
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		asNavFor: '.slider_vacansie__box',
 		dots: false,
