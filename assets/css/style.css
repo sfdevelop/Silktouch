@@ -11276,6 +11276,10 @@ a:hover {
     color: #EA5788 !important;
 }
 
+.stepper--style-2 .stepper__input {
+    min-width: 140px;
+}
+
 * {
     outline: none;
 }
@@ -11477,6 +11481,14 @@ a:hover {
 .category_slider .col img {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.category_slider span a {
+    color: #fff;
+}
+
+.category_slider span a:hover {
+    color: #fff !important;
 }
 
 .category_slider .slick-prev,
@@ -12457,6 +12469,10 @@ footer .line {
     font-size: 14px;
 }
 
+.category_all__box .filter .size_filter {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .category_all__box .filter h3 {
     font-weight: 500;
     font-size: 18px;
@@ -12524,7 +12540,7 @@ footer .line {
 
 .category_all__box .filter .active .img:before {
     content: "";
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     width: 25px;
     height: 25px;
     background-color: #000;
@@ -12546,7 +12562,7 @@ footer .line {
 
 .category_all__box .filter .active .img::after {
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     width: 25px;
     height: 25px;
     color: #fff;
@@ -12661,7 +12677,7 @@ footer .line {
 
 .product_item .color .active .img:before {
     content: "";
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     width: 40px;
     height: 40px;
     background-color: #000;
@@ -12683,7 +12699,7 @@ footer .line {
 
 .product_item .color .active .img::after {
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     width: 40px;
     height: 40px;
     color: #fff;
@@ -12751,7 +12767,8 @@ footer .line {
 }
 
 .product_item .link a:hover .gray,
-  .product_item .link a:hover a, .product_item .link a:hover i {
+  .product_item .link a:hover a,
+  .product_item .link a:hover i {
     color: #EA5788 !important;
 }
 
@@ -12759,10 +12776,79 @@ footer .line {
     line-height: 1.2;
 }
 
-.tabs .nav-tabs .nav-item.show .nav-link, .tabs .nav-tabs .nav-link.active {
+.tabs .nav-tabs .nav-item.show .nav-link,
+  .tabs .nav-tabs .nav-link.active {
     border-color: #EA5788 #EA5788 #fff;
 }
 
 .tabs .nav-tabs {
     border-bottom: 1px solid #EA5788;
+}
+
+.tabs_comment__box {
+    border-bottom: 1px solid #ced4da;
+    display: block;
+}
+
+.tabs_comment__box .rating {
+    position: relative;
+}
+
+.tabs_comment__box h5 {
+    color: #EA5788;
+}
+
+.tabs small {
+    font-size: 13px;
+}
+
+.gray {
+    -webkit-columns: #ced4da !important;
+    -moz-columns: #ced4da !important;
+    columns: #ced4da !important;
+}
+
+.rating_comments .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    position: relative;
+}
+
+.rating_comments .rating > input {
+    display: none;
+}
+
+.rating_comments .rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 35px;
+    color: #FFD600;
+    cursor: pointer;
+}
+
+.rating_comments .rating > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating_comments .rating > label:hover:before,
+.rating_comments .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating_comments .rating > input:checked ~ label:before {
+    opacity: 1;
+}
+
+.rating_comments .rating:hover > input:checked ~ label:before {
+    opacity: 0.4;
 }

@@ -25816,6 +25816,8 @@ $(document).ready(function () {
   ]
 	});
 });
+
+$("#input-id").rating();
 module.exports = lazyload;
 
 var inViewport = require('in-viewport');
