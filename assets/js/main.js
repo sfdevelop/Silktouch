@@ -25787,7 +25787,7 @@ $(document).ready(function () {
 
 //tooltips
 $(document).ready(function () {
-	$('[data-toggle="tooltip"]').tooltip();   
+	$('[data-toggle="tooltip"]').tooltip();
 });
 
 //слайдшоу в карточке
@@ -25806,18 +25806,33 @@ $(document).ready(function () {
 		dots: false,
 		centerMode: false,
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					arrows: false
-				}
-    }
-  ]
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				arrows: false
+			}
+		}]
 	});
 });
 
-$("#input-id").rating();
+//рейтинг звездочки
+$(document).ready(function () {
+	$("#input-id").rating();
+});
+
+//боковое  меню
+$(document).ready(function () {
+	$("#navToggle").click(function () {
+		$(this).toggleClass("active");
+		$(".overlay").toggleClass("open");
+		// this line ▼ prevents content scroll-behind
+		$("body").toggleClass("locked");
+	});
+	$('.mobile_li').click(function (ev) {
+		$(this).find('>ul').slideToggle();
+		ev.stopPropagation();
+	});
+});
 module.exports = lazyload;
 
 var inViewport = require('in-viewport');
