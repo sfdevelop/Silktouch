@@ -58,7 +58,8 @@
                         </div>
                     </div>
                     <div class="cabinet">
-                        <a href=""><img src="assets/i/man.svg" alt="man" class="mr-1 man">Вход</a>
+                        <a href="" data-toggle="modal" data-target="#exampleModal"><img src="assets/i/man.svg" alt="man"
+                                class="mr-1 man">Вход</a>
                     </div>
                     <div class="lang d-flex align-items-center ml-3">
                         <a href="" class="active mr-1">RU</a> |
@@ -100,9 +101,15 @@
                 </div>
                 <div class="right d-flex justify-content-end relative">
                     <a href="" class="mx-3"><img src="assets/i/search.svg" alt="search" class=""></a>
-                    <a href="" class="mx-3 relative"><div class="round">10</div><img src="assets/i/hart.svg" alt="hart" class=""></a>
-                    <a href="" class="mx-3 relative"><div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class=""></a>
-                    <a title="Корзина" href="cart.html"  class="mx-3 relative"><div class="round pink">0</div><img src="assets/i/cart.svg" alt="cart" class=""></a>
+                    <a href="" class="mx-3 relative">
+                        <div class="round">10</div><img src="assets/i/hart.svg" alt="hart" class="">
+                    </a>
+                    <a href="" class="mx-3 relative">
+                        <div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class="">
+                    </a>
+                    <a title="Корзина" href="cart.html" class="mx-3 relative">
+                        <div class="round pink">0</div><img src="assets/i/cart.svg" alt="cart" class="">
+                    </a>
                     <div class="overlay pt-5">
                     
                     	<nav class="overlayMenu d-flex flex-column justify-content-between h90">
@@ -161,7 +168,60 @@
                     	<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
                     </div>
                 </div>
-                
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Логин или Email">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Пароль">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12 my-2 d-flex">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+                                    <label class="custom-control-label" for="customCheck3">Запомнить меня </label>
+                                </div>
+                                <div class="col member_pass ml-4">
+                                    <a href="">Напомнить пароль</a>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="btn">Войти</div>
+                                <a href="registration.html" class="ml-4 pink">Зарегистрироваться </a>
+                            </div>
+                        </div>
+                        <div class="text-center my-4 d-block">или</div>
+                        <div class="col-12 my-3">
+                            <div class="btn btn-100"><img class="mr-2" src="assets/i/google.png" alt="google"> Продолжить с Google</div> 
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="btn btn-100 facebook"><img class="mr-2" src="assets/i/facebook.png" alt="google"> Продолжить с Google</div> 
+                        </div>
+                        <p class="small">* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -269,7 +329,7 @@
                                     <span class="px-3 mr-3" data-toggle="tooltip" data-placement="top" title="бюст: 80-88см; 
                                 бедра: 84-94 см">XL</span>
                                 </div>
-                                <a href="">
+                                <a href="" data-toggle="modal" data-target="#tablesize">
                                     <div class="table d-flex align-items-center mt-sm-2 mt-2 ">
     
                                         <span class="icon-list mr-2 px-3"></span>Таблица размеров
@@ -331,10 +391,10 @@
     
                     <div class="buy mt-4">
                         <a class="btn btn-lg mr-sm-3">Купить</a>
-                        <a class="btn btn-lg btn-certificate">Купить в 1 клик</a>
+                        <a data-toggle="modal" data-target="#one" class="btn btn-lg btn-certificate">Купить в 1 клик</a>
                     </div>
                     <div class="question mt-4 my-2">
-                        <a href="">
+                        <a href="" data-toggle="modal" data-target="#question">
                             Задать вопрос о товаре
                         </a>
                     </div>
@@ -417,105 +477,224 @@
                                 </div>
                             </div>
                             <div class="tab-pane container p-0 m-0" id="menu2">
-                              <div class="tabs_comment__box my-3 pb-3">
-                                  <div class="d-flex justify-content-between align-items-center pb-3">
-                                      <h5 class="p-0 m-0">Александра</h5>
-                                      <div class="rating mr-3 mr-lg-0 ">
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star"></span>
-                                          <span class="fa fa-star"></span>
-                                      </div>
-                                  </div>
-                                  <p>Замечательная пижамка на лето, отлично подходит, размер соответствует, приятная к телу, качество хорошее,
-                                      доставка быстрая.</p>
-                                  <small>15/08/2020</small>
-                              </div>
-                              <div class="tabs_comment__box my-3 pb-3">
-                                  <div class="d-flex justify-content-between align-items-center pb-3">
-                                      <h5 class="p-0 m-0">Ольга</h5>
-                                      <div class="rating mr-3 mr-lg-0 ">
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star"></span>
-                                          <span class="fa fa-star"></span>
-                                      </div>
-                                  </div>
-                                  <p>Приятная на ощупь. Симпатичная расцветка. Не проверили в носке, т.к. купили сразу 2 пижамы этой фирмы, синюю
-                                      оставили на осень.</p>
-                                  <small>15/08/2020</small>
-                              </div>
-                              <div class="tabs_comment__box my-3 pb-3">
-                                  <div class="d-flex justify-content-between align-items-center pb-3">
-                                      <h5 class="p-0 m-0">Илона</h5>
-                                      <div class="rating mr-3 mr-lg-0 ">
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star"></span>
-                                          <span class="fa fa-star"></span>
-                                      </div>
-                                  </div>
-                                  <p>Замечательная пижама.
-                                      Ткань очень приятная на ощупь
-                                      Товар полностью соответствует заявленным характеристикам</p>
-                                  <small>15/08/2020</small>
-                              </div>
-                              <div class="tabs_comment__box my-3 pb-3">
-                                  <div class="d-flex justify-content-between align-items-center pb-3">
-                                      <h5 class="p-0 m-0">Карина</h5>
-                                      <div class="rating mr-3 mr-lg-0 ">
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star checked"></span>
-                                          <span class="fa fa-star"></span>
-                                      </div>
-                                  </div>
-                                  <p>Прекрасное качество. Очень приятная расцветка. Материал хорош на ощупь. Не линяет при стирке.</p>
-                                  <small>15/08/2020</small>
-                              </div>
-                              <div class="text-right mt-4 d-block">
-                                  <a href=""> <img src="/assets/i/round.png" alt="" class="mr-2"> Посмотреть еще отзывы</a>
-                              </div>
-                              <div class="Feedback">
-                                  <form action="">
-                                      <div class="col px-0 d-block">
-                                          <input type="text" class="form-control my-4" id="usr" placeholder="Имя">
-                                          <div class="invalid-feedback">
-                                              Please select a valid state.
-                                          </div>
-                                      </div>
-                                      <div class="col px-0 d-block">
-                                          <input type="text" class="form-control " id="usr" placeholder="Email">
-                                          <div class="invalid-feedback">
-                                              Please select a valid state.
-                                          </div>
-                                      </div> 
-                                      <div class="col rating_comments text-left mt-4 d-flex align-items-center"> <span class="mr-3 pr-2 gray">Рейтинг </span> 
-                                          <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                                          </div>   
-                                      </div>
-                                      <div class="col px-0 mt-4 d-block"> 
-                                          <textarea class="form-control p-3" name="" id="" cols="30" rows="3" placeholder="Текст"></textarea>
-                                          <div class="invalid-feedback">  
-                                              Please select a valid state.  
-                                          </div> 
-                                      </div> 
-                                      <div class="d-block">
-                                          <small>* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</small> 
-                                      </div> 
-                              
-                                      <div class="d-block px-3 mt-3">
-                                          <a href="" class="btn ">Отправить</a>  
-                                      </div> 
-                                  </form> 
-                              </div>
+                                <div class="tabs_comment__box my-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center pb-3">
+                                        <h5 class="p-0 m-0">Александра</h5>
+                                        <div class="rating mr-3 mr-lg-0 ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <p>Замечательная пижамка на лето, отлично подходит, размер соответствует, приятная к телу, качество хорошее,
+                                        доставка быстрая.</p>
+                                    <small>15/08/2020</small>
+                                </div>
+                                <div class="tabs_comment__box my-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center pb-3">
+                                        <h5 class="p-0 m-0">Ольга</h5>
+                                        <div class="rating mr-3 mr-lg-0 ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <p>Приятная на ощупь. Симпатичная расцветка. Не проверили в носке, т.к. купили сразу 2 пижамы этой фирмы, синюю
+                                        оставили на осень.</p>
+                                    <small>15/08/2020</small>
+                                </div>
+                                <div class="tabs_comment__box my-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center pb-3">
+                                        <h5 class="p-0 m-0">Илона</h5>
+                                        <div class="rating mr-3 mr-lg-0 ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <p>Замечательная пижама.
+                                        Ткань очень приятная на ощупь
+                                        Товар полностью соответствует заявленным характеристикам</p>
+                                    <small>15/08/2020</small>
+                                </div>
+                                <div class="tabs_comment__box my-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center pb-3">
+                                        <h5 class="p-0 m-0">Карина</h5>
+                                        <div class="rating mr-3 mr-lg-0 ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                    <p>Прекрасное качество. Очень приятная расцветка. Материал хорош на ощупь. Не линяет при стирке.</p>
+                                    <small>15/08/2020</small>
+                                </div>
+                                <div class="text-right mt-4 d-block">
+                                    <a href=""> <img src="/assets/i/round.png" alt="" class="mr-2"> Посмотреть еще отзывы</a>
+                                </div>
+                                <div class="Feedback">
+                                    <form action="">
+                                        <div class="col px-0 d-block">
+                                            <input type="text" class="form-control my-4" id="usr" placeholder="Имя">
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                        <div class="col px-0 d-block">
+                                            <input type="text" class="form-control " id="usr" placeholder="Email">
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div> 
+                                        <div class="col rating_comments text-left mt-4 d-flex align-items-center"> <span class="mr-3 pr-2 gray">Рейтинг </span> 
+                                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                            </div>   
+                                        </div>
+                                        <div class="col px-0 mt-4 d-block"> 
+                                            <textarea class="form-control p-3" name="" id="" cols="30" rows="3" placeholder="Текст"></textarea>
+                                            <div class="invalid-feedback">  
+                                                Please select a valid state.  
+                                            </div> 
+                                        </div> 
+                                        <div class="d-block">
+                                            <small>* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</small> 
+                                        </div> 
+                                
+                                        <div class="d-block px-3 mt-3">
+                                            <a href="" class="btn ">Отправить</a>  
+                                        </div> 
+                                    </form> 
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Купить в 1 клик</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 text">
+                                <p>Купить без оформления. Просто оставьте номер телефона и наш консультант решит все вопросы
+                                    по оформлению заказа. </p>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Введите номер телефона ">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <p class="small">* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</p>
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="btn">Купить</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Имя*">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="E-mail*">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <textarea class="form-control p-3" name="" id="" cols="30" rows="3"
+                                    placeholder="Текст"></textarea>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <p class="small">* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</p>
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="btn">Отправить</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="tablesize" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Размерная сетка</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-2 strong">
+                            <div class="col-4">Размер</div>
+                            <div class="col-4">Обхват груди</div>
+                            <div class="col-4">Обхват бедер</div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-4 m-arial">M</div>
+                            <div class="col-4">80-88см</div>
+                            <div class="col-4">84-94 см</div> 
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-4 m-arial">M</div>
+                            <div class="col-4">80-88см</div>
+                            <div class="col-4">84-94 см</div> 
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-4 m-arial">M</div>
+                            <div class="col-4">80-88см</div>
+                            <div class="col-4">84-94 см</div> 
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-4 m-arial">M</div>
+                            <div class="col-4">80-88см</div>
+                            <div class="col-4">84-94 см</div> 
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
