@@ -32636,24 +32636,35 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 	$('.js-select2').select2({
 		maximumSelectionLength: 2,
 		language: "ru"
 	});
 });
-$(document).ready(function() {
+$(document).ready(function () {
 	$('#select3').select2({
 		maximumSelectionLength: 2,
 		language: "ru"
 	});
 });
-$(document).ready(function() {
+$(document).ready(function () {
 	$('#select4').select2({
 		maximumSelectionLength: 2,
 		language: "ru"
 	});
 });
+
+
+//filters
+
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
 module.exports = lazyload;
 
 var inViewport = require('in-viewport');

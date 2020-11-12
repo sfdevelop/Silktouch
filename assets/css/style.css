@@ -10977,6 +10977,75 @@ h1 {
     color: #6c757d;
 }
 
+.sidenav {
+    height: 100%;
+  /* 100% Full-height */
+    width: 0;
+  /* 0 ширина - изменить это с помощью JavaScript */
+    position: fixed;
+  /* Оставайтесь на месте */
+    z-index: 9;
+  /* Оставайтесь сверху */
+    top: 0;
+  /* Оставайтесь наверху */
+    left: 0;
+    background-color: #111;
+  /* Фон черный*/
+    overflow-x: hidden;
+  /* Отключить горизонтальную прокрутку */
+    padding-top: 60px;
+  /* Поместите контент в 60px сверху */
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
+
+/* Ссылки меню навигации */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+#main {
+    -webkit-transition: margin-left .5s;
+    -o-transition: margin-left .5s;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 .navBurger {
     position: absolute;
     right: 20px;
@@ -12374,6 +12443,10 @@ h1 {
 @media (max-width: 576px) {
     .main-menu .right {
         padding-right: 60px;
+    }
+
+    .main-menu img {
+        width: 97%;
     }
 
     .category_all .sorting {
@@ -14089,7 +14162,8 @@ footer .line {
     cursor: pointer;
 }
 
-.modal input, .modal textarea {
+.modal input,
+.modal textarea {
     background-color: #F3F3F3;
 }
 
@@ -14150,4 +14224,111 @@ footer .line {
 .registration .pink {
     color: #EA5788;
     text-decoration: underline;
+}
+
+.filter_left:hover {
+    cursor: pointer;
+}
+
+.filter_menu {
+    color: #fff;
+    font-size: 14px;
+}
+
+.filter_menu .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 100%;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filter_menu .btn-certificate {
+    color: #6c757d;
+}
+
+.filter_menu h3 {
+    font-size: 14px;
+    border-top: 1px solid #EA5788;
+    border-bottom: 1px solid #EA5788;
+}
+
+.filter_menu input {
+    max-width: 80px;
+}
+
+.filter_menu .color {
+    position: relative;
+    z-index: 55;
+}
+
+.filter_menu .color img {
+    border-radius: 50%;
+    z-index: 55;
+    width: 30px;
+    height: 30px;
+}
+
+.filter_menu .color:hover {
+    cursor: pointer;
+}
+
+.filter_menu .active {
+    width: 30px;
+    height: 30px;
+    z-index: 777;
+}
+
+.filter_menu .active .img {
+    position: relative;
+    z-index: 55;
+}
+
+.filter_menu .active .img:hover {
+    cursor: pointer;
+}
+
+.filter_menu .active .img:before {
+    content: "";
+    font-family: "FontAwesome";
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0.4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filter_menu .active .img::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    left: 50%;
+    margin-left: -4px;
+    top: 50%;
+    margin-top: -11px;
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
 }
