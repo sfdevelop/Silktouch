@@ -12972,6 +12972,7 @@ footer .line {
 
 .order .order_desc .img-order img {
     border-radius: 50%;
+    width: 25px;
 }
 
 .order .order-mobile p {
@@ -12983,6 +12984,14 @@ footer .line {
 .order .order-mobile .img-order img {
     border-radius: 50%;
     width: 20px;
+}
+
+.order .gray {
+    color: #adb5bd;
+}
+
+.order .desc_order p {
+    font-size: 85%;
 }
 
 .category_all .sorting {
