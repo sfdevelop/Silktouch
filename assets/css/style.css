@@ -13782,6 +13782,17 @@ footer .line {
     color: #fff;
 }
 
+.product_item .img_absolute {
+    position: absolute;
+    z-index: 8;
+    bottom: 130px;
+    left: 10px;
+}
+
+.product_item .img_absolute:hover {
+    cursor: pointer;
+}
+
 .product_item .product_slider_vacansie__box img {
     border-radius: 0px 25px;
 }
