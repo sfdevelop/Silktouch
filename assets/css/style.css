@@ -14511,3 +14511,17 @@ footer .line {
 .comparison .h50 {
     height: 60px !important;
 }
+
+#scroller {
+    position: fixed;
+  /** позиция кнопки scroll to top **/
+    bottom: 30px;
+    right: 30px;
+  /** картинка кнопки наверх**/
+    background: transparent url(../i/toup.png) no-repeat left top;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  /** скрываем кнопку в начале **/
+    display: none;
+}

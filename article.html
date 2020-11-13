@@ -58,7 +58,8 @@
                         </div>
                     </div>
                     <div class="cabinet">
-                        <a href=""><img src="assets/i/man.svg" alt="man" class="mr-1 man">Вход</a>
+                        <a href="" data-toggle="modal" data-target="#exampleModal"><img src="assets/i/man.svg" alt="man"
+                                class="mr-1 man">Вход</a>
                     </div>
                     <div class="lang d-flex align-items-center ml-3">
                         <a href="" class="active mr-1">RU</a> |
@@ -100,9 +101,15 @@
                 </div>
                 <div class="right d-flex justify-content-end relative">
                     <a href="" class="mx-3"><img src="assets/i/search.svg" alt="search" class=""></a>
-                    <a href="" class="mx-3 relative"><div class="round">10</div><img src="assets/i/hart.svg" alt="hart" class=""></a>
-                    <a href="" class="mx-3 relative"><div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class=""></a>
-                    <a title="Корзина" href="cart.html"  class="mx-3 relative"><div class="round pink">0</div><img src="assets/i/cart.svg" alt="cart" class=""></a>
+                    <a href="" class="mx-3 relative">
+                        <div class="round">10</div><img src="assets/i/hart.svg" alt="hart" class="">
+                    </a>
+                    <a href="comparison.html" class="mx-3 relative">
+                        <div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class="">
+                    </a>
+                    <a title="Корзина" href="cart.html" class="mx-3 relative">
+                        <div class="round pink">0</div><img src="assets/i/cart.svg" alt="cart" class="">
+                    </a>
                     <div class="overlay pt-5">
                     
                     	<nav class="overlayMenu d-flex flex-column justify-content-between h90">
@@ -161,7 +168,60 @@
                     	<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
                     </div>
                 </div>
-                
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Логин или Email">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control my-2" id="usr" placeholder="Пароль">
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-12 my-2 d-flex">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+                                    <label class="custom-control-label" for="customCheck3">Запомнить меня </label>
+                                </div>
+                                <div class="col member_pass ml-4">
+                                    <a href="">Напомнить пароль</a>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="btn">Войти</div>
+                                <a href="registration.html" class="ml-4 pink">Зарегистрироваться </a>
+                            </div>
+                        </div>
+                        <div class="text-center my-4 d-block">или</div>
+                        <div class="col-12 my-3">
+                            <div class="btn btn-100"><img class="mr-2" src="assets/i/google.png" alt="google"> Продолжить с Google</div> 
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="btn btn-100 facebook"><img class="mr-2" src="assets/i/facebook.png" alt="google"> Продолжить с Google</div> 
+                        </div>
+                        <p class="small">* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -384,6 +444,7 @@
                 SilkTouch©2020. Разработано <a href=""> SFdevelop</a>
             </div>
         </div>
+        <div id="scroller"></div>
     </footer>
 
     <!--JS-->

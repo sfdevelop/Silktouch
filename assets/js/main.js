@@ -32655,16 +32655,33 @@ $(document).ready(function () {
 	});
 });
 
+// Кнопка вверх
+$(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#scroller').fadeIn();
+        } else {
+            $('#scroller').fadeOut();
+        }
+    });
+    $('#scroller').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
+});
+
 
 //filters
 
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-	}
+function openNav() {
+	document.getElementById("mySidenav").style.width = "100%";
+}
 
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-	}
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
 module.exports = lazyload;
 
 var inViewport = require('in-viewport');
