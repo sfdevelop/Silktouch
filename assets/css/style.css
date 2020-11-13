@@ -11046,6 +11046,122 @@ h1 {
     }
 }
 
+.comparison {
+  /*!
+  // CodePen house keeping
+  */
+}
+
+.comparison .rtable {
+    /*!
+    // IE needs inline-block to position scrolling shadows otherwise use:
+    // display: block;
+    // max-width: min-content;
+    */
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.comparison .rtable,
+  .comparison .rtable--flip tbody {
+    -webkit-overflow-scrolling: touch;
+    background-size: 10px 100%, 10px 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+}
+
+.comparison .rtable td:first-child,
+  .comparison .rtable--flip tbody tr:first-child {
+    background-repeat: no-repeat;
+    background-size: 20px 100%;
+}
+
+.comparison .rtable td:last-child,
+  .comparison .rtable--flip tbody tr:last-child {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 20px 100%;
+}
+
+.comparison .rtable th {
+    font-size: 11px;
+    text-align: left;
+    line-height: 20px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    color: #232323;
+}
+
+.comparison .rtable th,
+  .comparison .rtable td {
+    padding: 6px 12px;
+    border: 1px solid #d9d7ce;
+}
+
+.comparison .rtable--flip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    background: none;
+}
+
+.comparison .rtable--flip thead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.comparison .rtable--flip tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.comparison .rtable--flip tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.comparison .rtable--flip td,
+  .comparison .rtable--flip th {
+    display: block;
+}
+
+.comparison .rtable--flip td {
+    background-image: none !important;
+    border-left: 0;
+    line-height: 20px;
+}
+
+.comparison .rtable--flip th:not(:last-child),
+  .comparison .rtable--flip td:not(:last-child) {
+    border-bottom: 0;
+}
+
+.comparison code {
+    background: #fffbcc;
+    font-size: 12px;
+}
+
 .navBurger {
     position: absolute;
     right: 20px;
@@ -12441,6 +12557,11 @@ h1 {
 }
 
 @media (max-width: 576px) {
+    .rtable th {
+        font-size: 12px !important;
+        width: 125px;
+    }
+
     .main-menu .right {
         padding-right: 60px;
     }
@@ -14331,4 +14452,62 @@ footer .line {
     position: absolute;
     z-index: 9999;
     color: #fff;
+}
+
+.comparison .p-relative {
+    position: relative;
+}
+
+.comparison .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 88;
+}
+
+.comparison .h120 th,
+.comparison .h120 td {
+    height: 140px;
+}
+
+.comparison .h120 img {
+    max-height: calc(140px - 1rem);
+}
+
+.comparison .w-200 {
+    width: 250px;
+    overflow: hidden;
+    word-wrap: break-word !important;
+}
+
+.comparison .w-200 h6 {
+    word-wrap: break-word !important;
+    display: block;
+    position: relative;
+    font-size: 85%;
+}
+
+.comparison .w-200 p {
+    background-color: red;
+    overflow: hidden;
+    word-wrap: break-word !important;
+    height: 30px;
+}
+
+.comparison th,
+.comparison td {
+    word-wrap: break-word !important;
+}
+
+.comparison .price {
+    font-weight: bold;
+}
+
+.comparison a {
+    color: #EA5788;
+    text-decoration: underline;
+}
+
+.comparison .h50 {
+    height: 60px !important;
 }
