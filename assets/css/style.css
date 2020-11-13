@@ -14465,6 +14465,12 @@ footer .line {
     z-index: 88;
 }
 
+.comparison .old {
+    text-decoration: line-through;
+    color: #EA5788;
+    font-size: 80%;
+}
+
 .comparison .h120 th,
 .comparison .h120 td {
     height: 140px;
