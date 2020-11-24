@@ -13870,8 +13870,14 @@ footer .line {
     font-size: 14px;
 }
 
+.category_all__box .filter .check {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
 .category_all__box .filter .size_filter {
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .category_all__box .filter h3 {
@@ -14530,4 +14536,9 @@ footer .line {
     cursor: pointer;
   /** скрываем кнопку в начале **/
     display: none;
+}
+
+.sidenav .size_filter {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }

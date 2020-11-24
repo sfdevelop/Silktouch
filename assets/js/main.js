@@ -32618,9 +32618,9 @@ $(document).ready(function () {
 });
 
 //рейтинг звездочки
-$(document).ready(function () {
-	$("#input-id").rating();
-});
+// $(document).ready(function () {
+// 	$("#input-id").rating();
+// });
 
 //боковое  меню
 $(document).ready(function () {
@@ -32645,13 +32645,13 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('#select3').select2({
 		maximumSelectionLength: 2,
-		language: "ru"
+		language: "uk"
 	});
 });
 $(document).ready(function () {
 	$('#select4').select2({
 		maximumSelectionLength: 2,
-		language: "ru"
+		language: "en"
 	});
 });
 
