@@ -13576,12 +13576,20 @@ footer .line {
     vertical-align: baseline !important;
 }
 
+.cart .size {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
 .cart .cart_mobile h5 {
     padding-right: 18px;
 }
 
 .cart .cart_mobile .size {
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .cart .cart_mobile .old {
