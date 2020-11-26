@@ -12645,6 +12645,14 @@ h1 {
     .sum .sum_figure {
         font-size: 24px;
     }
+
+    .result {
+        font-size: 83%;
+    }
+
+    .result h5 {
+        font-size: 83%;
+    }
 }
 
 a {
@@ -14549,4 +14557,51 @@ footer .line {
 .sidenav .size_filter {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+}
+
+.modal100 {
+    border-radius: 0px;
+    width: 100% !important;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 1080px;
+}
+
+.modal100 .modal-content {
+    height: 100%;
+    border-radius: 0px;
+}
+
+.modal100 input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    max-width: 1200px;
+    background-color: #fff;
+}
+
+.modal100 .modal-header {
+    border-bottom: none;
+}
+
+.modal100 .result {
+    height: 300px;
+    overflow: auto;
+}
+
+.modal100 .result img {
+    max-width: 60px;
+}
+
+.modal100 .result .price {
+    color: #EA5788;
+}
+
+.modal100 .result .price .old {
+    text-decoration: line-through;
+    font-size: 85%;
+    color: #6c757d;
+}
+
+.modal100 .result h5 {
+    padding-right: 20px;
 }
