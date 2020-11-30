@@ -12655,6 +12655,14 @@ h1 {
     }
 }
 
+.modal .br-0 {
+    border: none;
+}
+
+.modal .choice {
+    background-position: -150px;
+}
+
 a {
     color: #232323;
 }
