@@ -106,7 +106,7 @@
 	                    <div class="round">10</div><img src="assets/i/hart.svg" alt="hart" class="">
 	                </a>
 	                <a href="comparison.html" class="mx-3 relative">
-	                    <div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class="">
+	                    <div class="round">10</div><img src="assets/i/ves.svg" alt="Libra " class=""> 
 	                </a>
 	                <a title="Корзина" href="cart.html" class="mx-3 relative">
 	                    <div class="round pink">0</div><img src="assets/i/cart.svg" alt="cart" class="">
@@ -296,12 +296,12 @@
 	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	                    <span aria-hidden="true">&times;</span>
 	                </button>
-	            </div>
+	            </div> 
 	            <div class="modal-body row py-0"> 
 	                <div class="choice d-flex justify-content-end pb-3"> 
 	                    <div class="col-xl-8">
 	                        <h2 class="mb-3">Подобрать по реальным параметрам</h2>
-	                        <p>Выберите интересующую Вас категорию и введите свои параметры</p> 
+	                        <p>Выберите интересующую Вас категорию и введите свои параметры</p>
 	                        <form action="">
 	                            <div class="form-group my-3 ">
 	                                <select class="form-control" id="sel1">
@@ -1294,11 +1294,50 @@
 	    </div>
 	    <div class="line py-2 mt-3">
 	        <div class="container">
-	            SilkTouch©2020. Разработано <a href=""> SFdevelop</a>
+	            SilkTouch©2020. Разработано <a href="" data-toggle="modal" data-target="#start"> SFdevelop</a>
 	        </div>
 	    </div>
 	    <div id="scroller"></div>
 	</footer>
+	
+	<div class="modal fade" id="start" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	        <div class="modal-content"> 
+	            <!-- <div class="modal-header">
+	                <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                    <span aria-hidden="true">&times;</span>
+	                </button>
+	            </div> -->
+	            <div class="modal-body p-0 modal-start">
+	                <div class="row relative">
+	                    <img class="absolute d-none d-xl-block" src="assets/i/madal_sale.png" alt="sale">
+	                    <div class="col-5 p-0 d-none d-lg-inline">
+	                        <img class="w-100" src="assets/i/modal.png" alt="modal">
+	                    </div>
+	                    <div class="col-12 py-3 px-3 col-lg-7 text-center"> 
+	                        <p>Укажите свой <span> Email-адрес</span> и получите</p> 
+	                        <div class="big d-flex justify-content-center">
+	                            <div class="big_percent">10%</div>
+	                            <div class="big_desc d-flex flex-column justify-content-center pl-2">
+	                                <div class="strong">скидки</div>   
+	                                <p>на заказ от 400 грн.</p>
+	                            </div>
+	                        </div>
+	                        <form action="">
+	                            <div class="form-group mr-3">
+	                                <input type="text" class="form-control" id="usr" placeholder="Email"> 
+	                            </div>
+	                            <div class="btn">Получите мою скидку сейчас</div>
+	                            <div class="w-100"></div>
+	                            <!-- <a href="">Нет, спасибо, не хочу скидку</a>  -->
+	                        </form>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div> 
+	</div>
   
   <!-- Modal -->
 

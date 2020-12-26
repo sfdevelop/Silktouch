@@ -12424,6 +12424,13 @@ h1 {
     content: "\e90c";
 }
 
+@media (min-width: 1200px) and (max-width: 1366px) {
+    #start .absolute {
+        width: 250px;
+        right: -200px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu a {
         font-size: 12px !important;
@@ -12653,14 +12660,10 @@ h1 {
     .result h5 {
         font-size: 83%;
     }
-}
 
-.modal .br-0 {
-    border: none;
-}
-
-.modal .choice {
-    background-position: -150px;
+    .big_percent {
+        font-size: 75px !important;
+    }
 }
 
 a {
@@ -14612,4 +14615,47 @@ footer .line {
 
 .modal100 .result h5 {
     padding-right: 20px;
+}
+
+.modal-start span {
+    color: #ffc107;
+}
+
+.big_percent {
+    font-family: "Montserrat Alternates";
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 1.2;
+    color: #ea5788;
+}
+
+.big_desc .strong {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: left;
+    color: #ea5788;
+}
+
+#start .close {
+    position: absolute;
+    left: -20px;
+    top: -60px;
+    color: #fff;
+    font-size: 60px;
+}
+
+.modal .br-0 {
+    border: none;
+}
+
+.modal .choice {
+    background-position: -150px;
+}
+
+.modal .absolute {
+    right: -280px;
+    top: -200px;
+    width: 350px;
 }
