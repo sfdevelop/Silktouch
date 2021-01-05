@@ -14660,10 +14660,22 @@ footer .line {
     width: 350px;
 }
 
-.collapseLines ul {
+.collapseLines ul, .collapseLines h1, .collapseLines h2, .collapseLines h3, .collapseLines h4, .collapseLines h5, .collapseLines h6 {
     color: #fff;
 }
 
 .collapseLines a {
     display: inline !important;
+}
+
+.collapseLines h2 {
+    font-size: 20px;
+}
+
+.collapseLines h3 {
+    font-size: 17px;
+}
+
+.collapseLines h4, .collapseLines h5, .collapseLines h6 {
+    font-size: 15px;
 }
