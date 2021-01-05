@@ -14659,3 +14659,11 @@ footer .line {
     top: -200px;
     width: 350px;
 }
+
+.collapseLines ul {
+    color: #fff;
+}
+
+.collapseLines a {
+    display: inline !important;
+}
