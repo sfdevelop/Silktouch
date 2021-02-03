@@ -12747,6 +12747,28 @@ a:hover {
     position: relative;
 }
 
+.main-menu .dropdown-menu .dropdown-menu {
+    top: auto;
+    left: 100%;
+    -webkit-transform: translateY(-2rem);
+    -ms-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+}
+
+.main-menu .dropdown-item + .dropdown-menu {
+    display: none;
+}
+
+.main-menu .dropdown-item.submenu::after {
+    content: '▸';
+    margin-left: 0.5rem;
+}
+
+.main-menu .dropdown-item:hover + .dropdown-menu,
+.main-menu .dropdown-menu:hover {
+    display: block;
+}
+
 .menu {
     height: 30px;
     background: #f3f3f3;
