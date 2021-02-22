@@ -13891,6 +13891,14 @@ footer .line {
     font-size: 85%;
 }
 
+.tooltip {
+    pointer-events: none !important;
+}
+
+.category_all label {
+    display: inline !important;
+}
+
 .category_all .sorting {
     height: 20px;
     font-size: 13px;
